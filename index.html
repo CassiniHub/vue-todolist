@@ -28,12 +28,15 @@
             </div>
         
             <div class="todos-container">
-                <ul>
+                <ul v-if="todos.length > 0">
                     <li v-for="(todo, index) in todos">
                         {{ todo }}
                         <button @click="todoRemoveClick(index)">X</button>
                     </li>
                 </ul>
+                <h2 v-else>
+                    There is no task to do.
+                </h2>
             </div>
 
         </div>  <!-- end container -->
