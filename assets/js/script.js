@@ -26,8 +26,10 @@ function init() {
 
             todoAddButton: function () {
                 
-                this.todos.push(this.todoNewInput);
-                this.todoNewInput = '';
+                if (this.todoNewInput.length > 0) {
+                    this.todos.push(this.todoNewInput);
+                    this.todoNewInput = '';
+                }
             }
         }
     });
