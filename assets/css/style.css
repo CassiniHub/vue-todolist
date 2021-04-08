@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.todos-container,
+.input-container{
+
+    width: 300px;
+}
+
+.input-container{
+
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 20px;
+}
+
+li{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.title > img{
+    height: 100px;
+}
