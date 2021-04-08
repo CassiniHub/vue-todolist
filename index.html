@@ -29,9 +29,9 @@
         
             <div class="todos-container">
                 <ul>
-                    <li v-for="todo in todos">
+                    <li v-for="(todo, index) in todos">
                         {{ todo }}
-                        <button>X</button>
+                        <button @click="todoRemoveClick(index)">X</button>
                     </li>
                 </ul>
             </div>

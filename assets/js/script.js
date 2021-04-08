@@ -13,12 +13,14 @@ function init() {
                 'Elem 32',
                 'Elem 58'
             ]
-
         },
 
         methods: {
 
-            
+            todoRemoveClick: function (index) {
+                
+                this.todos.splice(index, 1);
+            }
         }
 
     });
