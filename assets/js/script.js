@@ -12,7 +12,9 @@ function init() {
                 'Elem 1',
                 'Elem 32',
                 'Elem 58'
-            ]
+            ],
+
+            todoNewInput: ''
         },
 
         methods: {
@@ -20,9 +22,14 @@ function init() {
             todoRemoveClick: function (index) {
                 
                 this.todos.splice(index, 1);
+            },
+
+            todoAddButton: function () {
+                
+                this.todos.push(this.todoNewInput);
+                this.todoNewInput = '';
             }
         }
-
     });
 }
 
