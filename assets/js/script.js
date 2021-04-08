@@ -26,7 +26,8 @@ function init() {
 
             todoAddButton: function () {
                 
-                if (this.todoNewInput.length > 0) {
+                if (this.todoNewInput.length > 0 && this.todoNewInput.charAt(0) !== ' ') {
+                    console.log(this.todoNewInput.charAt(0));
                     this.todos.push(this.todoNewInput);
                     this.todoNewInput = '';
                 }
